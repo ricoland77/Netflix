@@ -8,6 +8,8 @@ function App() {
   return (
     <div className="container">
       <img src={netflix} alt="logo Netflix" />
+
+      {/* boucle */}
       {movies.map((elem) => {
         return <Section title={elem.category} tabImg={elem.images} />;
       })}

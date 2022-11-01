@@ -1,4 +1,5 @@
 import Images from "./Images";
+import movies from "../movies.json";
 
 const Section = (props) => {
   // console.log(props.title);
@@ -6,7 +7,9 @@ const Section = (props) => {
   return (
     <>
       <h2>{props.title}</h2>
-      <img src="" alt="" />
+      {props.tabImg.map((elem) => {
+        return <img src="../movies.json" alt="" />;
+      })}
     </>
   );
 };
