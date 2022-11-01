@@ -4,11 +4,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
 }
 
 .container {
-  background-color: rgb(201, 201, 201);
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  background-color: black;
   max-width: 1465px;
   margin: 0 auto;
   height: 100vh;
@@ -16,8 +17,18 @@
 
 .container img {
   height: 100px;
+  margin-top: 15px;
 }
 
-.section {
-  background-color: aqua;
+.carousel {
+  display: flex;
+  overflow-x: scroll;
+}
+
+.films {
+  flex-shrink: 0;
+}
+
+.title {
+  margin-top: 30px;
 }
