@@ -9,9 +9,10 @@ function App() {
     <div className="container">
       <img src={netflix} alt="logo Netflix" />
 
-      {/* boucle */}
-      {movies.map((elem) => {
-        return <Section title={elem.category} tabImg={elem.images} />;
+      {/* boucle sur mon fichier movies.json pour les titres des catégories */}
+      {movies.map((cat) => {
+        console.log(cat);
+        return <Section title={cat.category} tabImg={cat.images} />;
       })}
     </div>
   );
