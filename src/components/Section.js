@@ -9,7 +9,7 @@ const Section = (props) => {
       <h2>{props.title}</h2>
 
       {props.tabImg.map((elem) => {
-        return <img src={elem.images} alt="" />;
+        return <img src={elem} alt="" />;
       })}
     </>
   );
